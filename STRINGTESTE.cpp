@@ -3,24 +3,12 @@
 
 using namespace std;
 
-struct Node
-{
-	int val;
-	Node *next;
-	Node(int x){
-		val = x; 
-		next = NULL;	
-	}
-
-	// Node(int x) : val(x), next(NULL) {}
-};
-
 
 
 
 int max_sum(vector<int> s){
 	
-	int resp=0, maior=0;
+	int resp=2, maior=0;
 	
 	for(int i=0;i<s.size();i++){
 		
