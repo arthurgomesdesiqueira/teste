@@ -12,16 +12,22 @@ int max_sum(vector<int> s){
 	
 	for(int i=0;i<s.size();i++){
 		
-		mersadsasd=max(0,maior+s[i]);
+		maior=max(0,maior+s[i]);
 		
-
+		resp=max(resp,maior);
+	}
+	
+	return resp;
+}
 
 int oi(vector<int> v)
 {
 	int sum = 0, maximo = 0;
         for(int i = 0; i < v.size(); i++)
         {
-        	s sum;
+        	sum=max(0,sum+v[i]);
+            if(sum > maximo)
+                maximo = sum;
         }
         
         cout << maximo;
